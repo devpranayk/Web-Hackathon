@@ -1,0 +1,74 @@
+
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    height:80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .login-btn {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #0073e6;
+    cursor: pointer;
+  }
+  
+  .login-btn:hover {
+    background-color: #e6e6e6;
+  }
+  
+  /* Container Layout */
+  .container {
+    display: flex;
+    margin: 20px;
+  }
+  
+  /* Sidebar Menu */
+  .menu {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .menu-item {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #e6e6e6;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .menu-item:hover {
+    background-color: #d4d4d4;
+  }
+  
+  /* Content Area */
+  .content {
+    width: 80%;
+    padding: 20px;
+  }
+  
+
+  
+  .content-item.active {
+    display: block;
+  }
+  

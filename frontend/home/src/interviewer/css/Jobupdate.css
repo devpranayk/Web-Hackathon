@@ -1,0 +1,94 @@
+
+  /* Application Section */
+  #applications-section {
+    padding: 30px 0;
+  }
+  
+  /* Title Styling */
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #007bff;
+  }
+
+
+  .modal-dialog-centered{
+    justify-content: center;
+  }
+  
+  /* Application Cards */
+  .application-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px 0;
+    margin-bottom: 20px;
+    width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* On hover, scale the card slightly */
+  .application-card:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Card Details Styling */
+  .application-card .details {
+    margin-bottom: 15px;
+  }
+  
+  .application-card p {
+    margin: 5px 0;
+  }
+  
+  /* Button Styling */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    width: 100%;
+    padding: 12px;
+    font-weight: 600;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  /* Modal Custom Styles */
+  .modal-content {
+    border-radius: 8px;
+  }
+  
+  .modal-header {
+    background: -webkit-linear-gradient(left,#003366,#004080,#0059b3, #0073e6);
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .modal-footer button {
+    border-radius: 5px;
+  }
+  
+  h5 {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .application-card {
+      padding: 15px;
+    }
+  }
+  

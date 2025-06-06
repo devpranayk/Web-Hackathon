@@ -1,0 +1,145 @@
+/* Job Card Styling */
+.job-card {
+    border-radius: 10px; /* Rounded corners for job cards */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Light shadow effect for depth */
+    background-color: #ffffff; /* White background for cards */
+    margin-bottom: 100px !important; /* Increased space between cards */
+    padding: 20px; /* Added padding for better spacing */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    min-width: 500px !important;
+  }
+  
+  /* Hover Effect on Job Cards */
+  .job-card:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+  
+  /* Job Card Header Styling */
+  .job-card h5 {
+    font-size: 1.25rem; /* Larger font size for the job title */
+    font-weight: 600; /* Slightly bolder font weight */
+    color: #333; /* Dark color for the job title */
+    margin-bottom: 10px; /* Space between title and description */
+  }
+  
+  /* Job Card Description Styling */
+  .job-card p {
+    font-size: 1rem; /* Regular size for job description */
+    color: #555; /* Slightly muted color for readability */
+    margin-bottom: 15px; /* Space between description and button */
+  }
+  
+  /* Button inside Job Card */
+  .job-card .btn-primary {
+    background-color:#6a3939; /* Blue button in job card */
+    border-color: #007bff;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+  }
+  
+  .job-card .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Modal Content Styling */
+  .modal-content {
+    border-radius: 12px; /* More rounded corners for the modal */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow effect for depth */
+    background-color: #f8f9fa; /* Light background for the modal */
+    padding: 20px; /* Padding inside the modal */
+  }
+  
+  /* Modal Header Styling */
+  .modal-header {
+    background-color: #007bff; /* Blue background for header */
+    color: #ffffff; /* White text in the header */
+    border-bottom: 2px solid #ffffff; /* White border under the header */
+    border-radius: 10px 10px 0 0; /* Rounded corners on top */
+    text-align: center; /* Center text */
+    padding: 15px 20px;
+    font-size: 1.5rem; /* Larger font for the modal title */
+  }
+  
+  /* Modal Body Styling */
+  .modal-body {
+    padding: 25px 20px; /* Padding inside the modal body */
+    font-size: 1rem; /* Standard font size */
+    line-height: 1.7; /* Better readability */
+    color: #333; /* Darker text for better contrast */
+  }
+  
+  /* Modal Body Paragraphs */
+  .modal-body p {
+    margin-bottom: 15px; /* Space between paragraphs */
+    font-size: 1.05rem; /* Slightly larger text for better readability */
+  }
+  
+  .modal-body strong {
+    color: #007bff; /* Highlight the labels in blue */
+    font-weight: 600; /* Slightly bolder labels */
+  }
+  
+  /* Modal Footer Styling */
+  .modal-footer {
+    border-top: 2px solid #ddd; /* Light border between footer and content */
+    justify-content: space-between; /* Spread out the footer buttons */
+    padding: 15px 20px;
+  }
+  
+  /* Styling for the Apply and Close Buttons */
+  .btn-primary {
+    background-color: #007bff; /* Blue button */
+    border-color: #007bff;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 1.1rem; /* Larger text on buttons */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d; /* Gray button */
+    border-color: #6c757d;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+  }
+  
+  /* Job Description and Skills List Styling */
+  ul#edit-skills-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Increased space between list items */
+  }
+  
+  .add-btn, .remove-btn {
+    margin-left: 15px;
+    font-size: 1.2rem; /* Slightly larger buttons for better visibility */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .job-card {
+      padding: 15px; /* Less padding on smaller screens */
+      margin-bottom: 20px; /* Slightly increased margin between cards */
+    }
+  
+    .modal-body {
+      padding: 15px; /* Less padding in modal body on smaller screens */
+    }
+  
+    .btn-primary, .btn-secondary {
+      font-size: 1rem; /* Smaller buttons on small screens */
+      padding: 8px 15px;
+    }
+  }
+  

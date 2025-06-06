@@ -1,0 +1,98 @@
+
+  .content {
+    margin-top: 50px;
+    margin-left: 200px;
+    width: calc(100vw - 200px);
+    height: calc(100vh - 50px);
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .form-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .form-group textarea {
+    height: 100px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: (left,#003366,#004080,#0059b3, #0073e6)
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+  }
+  
+  .modal-content button {
+    
+    margin-top: 13px;
+    margin-right: 20px;
+  }
+  
+  .update-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .update-btn:hover {
+    background-color: #218838;
+  }
+  
+  .close-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .close-btn:hover {
+    background-color: #c82333;
+  }

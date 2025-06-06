@@ -1,0 +1,272 @@
+/* Profile Page */
+.profile-page {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 5px 5px 25px #6b5592;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  width: 90%;
+  max-width: 700px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-container:hover {
+  transform: scale(1.02); /* Small zoom effect */
+}
+
+.user-photo {
+  position: absolute;
+  top: -60px;
+  left: 20px;
+  margin-top: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid white;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-image {
+  width: 100%;
+  height: 100%;
+  margin-top: -10px;
+  object-fit: cover;
+}
+
+.details-container {
+  margin-left: 110px;
+  width: calc(100% - 120px);
+}
+
+.skills-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-section li {
+  background: #e6e6e6;
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px;
+  border-radius: 12px;
+  transition: background-color 0.2s;
+}
+
+.skills-section li:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Modal */
+.modal {
+  display: none; /* Default state hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Darker background */
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* When modal is open, show it */
+.modal.show {
+  display: flex;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 60%; /* Width adjustment */
+  max-width: 450px; /* Ensuring compact look */
+  max-height: 80vh; /* Adjust height to fit within the viewport */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transform: translateY(-20px);
+  transition: transform 0.3s ease-out;
+}
+
+/* Modal Header */
+.modal-header {
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.modal-header h5 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Close button (top-right corner) */
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #888;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.close-btn:hover {
+  color: #ff4d4d;
+  transition: color 0.2s;
+}
+
+/* Modal Body */
+.modal-body {
+  font-size: 16px;
+  color: #555;
+}
+
+.modal-body form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+input[type="text"], input[type="email"], select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, select:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #f1f8ff;
+}
+
+/* Skills Section */
+ul#edit-skills-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+ul#edit-skills-list li input {
+  width: calc(100% - 50px);
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+ul#edit-skills-list li button.remove-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  width: 40px;
+  cursor: pointer;
+}
+
+ul#edit-skills-list li button.remove-btn:hover {
+  background-color: #e60000;
+}
+
+/* Add Skill Button */
+.add-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #218838;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Footer */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.modal-footer button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.save-btn {
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  color: white;
+}
+
+.save-btn:hover {
+  background: linear-gradient(90deg, #0056b3, #003366);
+  transform: scale(1.05);
+}
+
+.close-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.close-btn:hover {
+  background-color: #5a6268;
+  transform: scale(1.05);
+}
+
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
