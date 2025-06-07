@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #0073e6;
+    /* background-color: #0073e6; */
     color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
@@ -20,7 +20,7 @@
     border: none;
     border-radius: 5px;
     background-color: white;
-    color: #0073e6;
+    /* color: #0073e6; */
     cursor: pointer;
   }
   
